@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "axios": "^0.21.1",
+    "moment": "^2.29.1",
+    "react-date-picker": "^8.2.0",
+    "recharts": "^2.0.10"
+  }
+}

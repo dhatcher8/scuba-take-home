@@ -1,0 +1,22 @@
+Resources Utilized: 
+https://fastapi.tiangolo.com/ - FastAPI Docs
+https://docs.timescale.com/timescaledb/latest/getting-started/access-timescaledb – TimescaleDB Docs
+https://popsql.com/learn-sql/postgresql/how-to-calculate-percentiles-in-postgresql - Postgresql Percentiles
+https://www.postgresql.org/docs/ - Postgresql Docs
+https://recharts.org/en-US - Recharts Docs
+https://reactdatepicker.com/ - React Datepicker Docs
+https://marketstack.com/documentation - Marketstack Docs
+https://youtu.be/0JaCS6xcIBM - FastAPI & React Tutorial
+
+
+Things That Could’ve Been Improved That I Ended Up Skipping Over for Time Reasons:
+-	Using SQLAlchemy to really utilize FastAPI with their models and connect with TimescaleDB, tried for like an hour, but ended up taking too much time to learn
+-	DB Logic – so bad currently. Was trying to implement a flow that checked if the data existed, if it didn’t all exist found the latest date and only called api for data since then, but it was taking too long to implement. Ended up deleting all data for that stock when called and retrieving all new data, putting in db, and retrieving from db to use. Obviously wouldn’t do this seriously
+-	Visuals: Very lacking, graphs need labels, need cleaning up and spicing up everywhere
+-	Took lots of shortcuts when it came to separating out functionality. A lot of data formatting was done sloppy for time reasons. 
+-   Only one component, yikes
+
+Notes:
+-   To start front-end: npm start
+-   To start psql w/ database: psql postgres://...... (this is the service url from timescaledb)
+-   To start back-end server: uvicorn main:app --reload
